@@ -42,7 +42,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Image Sharpen"
+                        android:text="Select an image"
                         android:textColor="@color/white"
                         android:textSize="18sp"
                         android:fontFamily="@font/wix_display"/>
@@ -50,7 +50,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Sharpen your image within few seconds."
+                        android:text="Choose a image from your local storage and edit with EditorX"
                         android:textColor="#BBB"
                         android:textSize="14sp"
                         android:fontFamily="@font/wix_display"/>
@@ -59,73 +59,73 @@
         </androidx.cardview.widget.CardView>
 
         <!--        Option 2        -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/colorizeImage"
-            android:layout_width="match_parent"
-            android:layout_height="125dp"
-            app:cardCornerRadius="15dp"
-            android:layout_marginTop="15dp">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/grad_1">
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:padding="15dp"
-                    android:src="@drawable/colorize"
-                    android:scaleType="centerInside"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="100dp"
-                    android:orientation="vertical"
-                    android:padding="15dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Image Colorization"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:fontFamily="@font/wix_display"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:text="Colorize your image while you blink your eyes."
-                        android:textColor="#BBB"
-                        android:textSize="14sp"
-                        android:fontFamily="@font/wix_display"/>
-                </LinearLayout>
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/colorizeImage"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="125dp"-->
+<!--            app:cardCornerRadius="15dp"-->
+<!--            android:layout_marginTop="15dp">-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@drawable/grad_1">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:src="@drawable/colorize"-->
+<!--                    android:scaleType="centerInside"/>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginStart="100dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="15dp">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Image Colorization"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:fontFamily="@font/wix_display"/>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:text="Colorize your image while you blink your eyes."-->
+<!--                        android:textColor="#BBB"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:fontFamily="@font/wix_display"/>-->
+<!--                </LinearLayout>-->
+<!--            </RelativeLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
         
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp">
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/grad_1">
-                <androidx.cardview.widget.CardView
-                    android:layout_width="300dp"
-                    android:layout_height="250dp"
-                    app:cardCornerRadius="15dp"
-                    android:layout_centerInParent="true">
-                    <com.google.android.gms.ads.AdView
-                        xmlns:ads="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/adView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        ads:adSize="MEDIUM_RECTANGLE"
-                        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
-                    </com.google.android.gms.ads.AdView>
-                </androidx.cardview.widget.CardView>
-            </RelativeLayout>
-        </RelativeLayout>
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp">-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="2dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:background="@drawable/grad_1">-->
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="300dp"-->
+<!--                    android:layout_height="250dp"-->
+<!--                    app:cardCornerRadius="15dp"-->
+<!--                    android:layout_centerInParent="true">-->
+<!--                    <com.google.android.gms.ads.AdView-->
+<!--                        xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--                        android:id="@+id/adView"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        ads:adSize="MEDIUM_RECTANGLE"-->
+<!--                        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">-->
+<!--                    </com.google.android.gms.ads.AdView>-->
+<!--                </androidx.cardview.widget.CardView>-->
+<!--            </RelativeLayout>-->
+<!--        </RelativeLayout>-->
 
 
 

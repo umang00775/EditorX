@@ -24,14 +24,14 @@ class Dashboard: Fragment(R.layout.fragment_dashboard) {
         activity?.window?.statusBarColor = ContextCompat.getColor(requireContext(), R.color.dark_theme)
 
         // Ads
-        MobileAds.initialize(requireContext()) {}
-        val mAdView = view.findViewById<AdView>(R.id.adView)
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
+//        MobileAds.initialize(requireContext()) {}
+//        val mAdView = view.findViewById<AdView>(R.id.adView)
+//        val adRequest = AdRequest.Builder().build()
+//        mAdView.loadAd(adRequest)
 
 
         val sharpImg = view.findViewById<CardView>(R.id.sharpImage)
-        val colorizeImg = view.findViewById<CardView>(R.id.colorizeImage)
+//        val colorizeImg = view.findViewById<CardView>(R.id.colorizeImage)
 
 
         // Sharp image

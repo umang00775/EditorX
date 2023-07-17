@@ -135,7 +135,7 @@ class Edit: Fragment(R.layout.edit) {
 
         // Large progress bar
         val largeProgressBar = view.findViewById<ProgressBar>(R.id.large_progressbar)
-        largeProgressBar.visibility = View.VISIBLE
+        largeProgressBar.visibility = View.INVISIBLE
 
         // get the initial data from previous screen
         val sharedPrefs = requireContext().getSharedPreferences(Keys.SHARED_PREF, Context.MODE_PRIVATE)
