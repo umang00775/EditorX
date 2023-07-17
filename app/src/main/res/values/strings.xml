@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">EditorX</string>
+
+
+    <string name="login">Log In!</string>
+    <string name="signup">Sign Up!</string>
+
+    <string name="m1">M1</string>
+    <string name="m2">M2</string>
+    <string name="m3">M3</string>
+    <string name="m4">M4</string>
+    <string name="m5">M5</string>
+    <string name="m6">M6</string>
+    <string name="m7">M7</string>
+    <string name="m8">M8</string>
+
+    <string name="f1">Paimon</string>
+    <string name="f2">Jean</string>
+    <string name="f3">Fischal</string>
+    <string name="f4">Klee</string>
+    <string name="f5">Kokomi</string>
+    <string name="f6">Ninguagg</string>
+    <string name="f7">Xiangling</string>
+    <string name="f8">Yae</string>
+
+    <string name="brightness">Brightness</string>
+    <string name="contrast">Contrast</string>
+    <string name="saturation">Saturation</string>
+    <string name="exposure">Exposure</string>
+    <string name="shadow">Shadow</string>
+    <string name="sharp">Sharpness</string>
+    <string name="colortemp">Temperature</string>
+    <string name="tone">Tone</string>
+    <string name="brilliance">Brilliance</string>
+    <string name="vignette">Vignette</string>
+    <string name="blur">Blur</string>
+
+
+    <string name="rotate">Rotate</string>
+    <string name="filters">Filters</string>
+    <string name="adjust">Adjust</string>
+
+
+    <string name="rotateL">Left</string>
+    <string name="rotateR">Right</string>
+
+
+    <string name="red">Red</string>
+    <string name="pink">Pink</string>
+    <string name="orange">Orange</string>
+    <string name="yellow">Yellow</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="purple">Purple</string>
+    <string name="hot_pink">Hot pink</string>
+    <string name="cyan">Cyan</string>
+    <string name="orange_red">Ored</string>
+    <string name="randomise">Randomise</string>
+    <string name="oiled">Oiled</string>
+    <string name="bw">B &amp; W</string>
+    <string name="original">Original</string>
+
+</resources>

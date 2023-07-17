@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "684968756429",
+    "firebase_url": "https://open-firebase-00775-default-rtdb.firebaseio.com",
+    "project_id": "open-firebase-00775",
+    "storage_bucket": "open-firebase-00775.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684968756429:android:0770d8cfde1193a550d584",
+        "android_client_info": {
+          "package_name": "com.elementalideas.editorx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684968756429-ekgik3khkcd64gno73k4ahh3ojh8kqba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaiqkn2-c47pJhol1bFIey1cEY6-P9Oos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684968756429-ekgik3khkcd64gno73k4ahh3ojh8kqba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684968756429:android:ebb0d2e62ffdfa5550d584",
+        "android_client_info": {
+          "package_name": "com.umang.day_16"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684968756429-ekgik3khkcd64gno73k4ahh3ojh8kqba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaiqkn2-c47pJhol1bFIey1cEY6-P9Oos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684968756429-ekgik3khkcd64gno73k4ahh3ojh8kqba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684968756429:android:83dae2481d61096b50d584",
+        "android_client_info": {
+          "package_name": "com.umang.wavy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684968756429-ekgik3khkcd64gno73k4ahh3ojh8kqba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaiqkn2-c47pJhol1bFIey1cEY6-P9Oos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684968756429-ekgik3khkcd64gno73k4ahh3ojh8kqba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

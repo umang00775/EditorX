@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_theme">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dp_selector_bg"
+        android:padding="@dimen/main_pad">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/wix_display"
+                android:text="Choose avatar"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/wix_display"
+                    android:text="Male avatars"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/male1"
+                                        android:layout_width="50dp"
+                                        android:layout_height="match_parent"
+                                        android:contentDescription="@string/m1"
+                                        android:onClick="onImageOptionClicked"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/me"
+                                        android:tag="m1" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/wix_display"
+                                    android:gravity="center"
+                                    android:text="@string/m1"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/male2"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:onClick="onImageOptionClicked"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/me"
+                                        android:tag="m2" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/wix_display"
+                                    android:gravity="center"
+                                    android:text="@string/m2"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/male3"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:onClick="onImageOptionClicked"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/me"
+                                        android:tag="m3" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/wix_display"
+                                    android:gravity="center"
+                                    android:text="@string/m3"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/male4"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:onClick="onImageOptionClicked"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/me"
+                                        android:tag="m4" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/wix_display"
+                                    android:gravity="center"
+                                    android:text="@string/m4"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/male5"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:onClick="onImageOptionClicked"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/me"
+                                        android:tag="m5" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/wix_display"
+                                    android:gravity="center"
+                                    android:text="@string/m5"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/male6"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:onClick="onImageOptionClicked"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/me"
+                                        android:tag="m6" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/wix_display"
+                                    android:gravity="center"
+                                    android:text="@string/m6"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/male7"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:onClick="onImageOptionClicked"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/me"
+                                        android:tag="m7" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/wix_display"
+                                    android:gravity="center"
+                                    android:text="@string/m7"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/male8"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:onClick="onImageOptionClicked"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/me"
+                                        android:tag="m8" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/wix_display"
+                                    android:gravity="center"
+                                    android:text="@string/m8"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/wix_display"
+                    android:text="Female avatars"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/female1"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:onClick="onImageOptionClicked"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/f1"
+                                        android:tag="f1" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/wix_display"
+                                    android:gravity="center"
+                                    android:text="@string/f1"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/female2"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:onClick="onImageOptionClicked"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/f2"
+                                        android:tag="f2" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/wix_display"
+                                    android:gravity="center"
+                                    android:text="@string/f2"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/female3"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:onClick="onImageOptionClicked"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/f3"
+                                        android:tag="f3" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/wix_display"
+                                    android:gravity="center"
+                                    android:text="@string/f3"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/female4"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:onClick="onImageOptionClicked"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/f4"
+                                        android:tag="f4" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/wix_display"
+                                    android:gravity="center"
+                                    android:text="@string/f4"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/female5"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:onClick="onImageOptionClicked"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/f5"
+                                        android:tag="f5" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/wix_display"
+                                    android:gravity="center"
+                                    android:text="@string/f5"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/female6"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:onClick="onImageOptionClicked"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/f6"
+                                        android:tag="f6" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/wix_display"
+                                    android:gravity="center"
+                                    android:text="@string/f6"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/female7"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:onClick="onImageOptionClicked"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/f7"
+                                        android:tag="f7" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/wix_display"
+                                    android:gravity="center"
+                                    android:text="@string/f7"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/female8"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:onClick="onImageOptionClicked"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/f8"
+                                        android:tag="f8" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/wix_display"
+                                    android:gravity="center"
+                                    android:text="@string/f8"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

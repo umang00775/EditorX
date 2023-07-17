@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_theme">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dp_selector_bg"
+        android:padding="@dimen/main_pad">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/wix_display"
+                android:text="Change name"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/new_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:textCursorDrawable="@drawable/pointer"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/wix_display"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/change_name_box"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/neg_btn_bg"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/close" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/pos_btn_bg"
+                    android:layout_alignParentEnd="true">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/done" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
