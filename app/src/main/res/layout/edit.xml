@@ -879,8 +879,20 @@
                     android:textSize="8sp" />
             </RelativeLayout>
         </RelativeLayout>
-
     </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/result_level"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_theme">
+        <ImageView
+            android:id="@+id/result_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
 
 
 </RelativeLayout>

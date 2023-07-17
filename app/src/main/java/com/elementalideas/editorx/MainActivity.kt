@@ -30,8 +30,10 @@ class MainActivity : AppCompatActivity() {
 //            }
 //        },2500)
 
-        intent = Intent(this, Dashboard::class.java)
-        startActivity(intent)
+        Handler().postDelayed({
+            intent = Intent(this, Dashboard::class.java)
+            startActivity(intent)
+        }, 2500)
     }
 
 

@@ -86,6 +86,9 @@ class Edit: Fragment(R.layout.edit) {
     private lateinit var originalImage: Bitmap
     private lateinit var editedImage: Bitmap
 
+    private lateinit var resultLevel: RelativeLayout
+    private lateinit var resultImageView: ImageView
+
     private lateinit var prevOperation: String
     private var seek1Value: Int = 100
     private var seek2Value: Int = 50
@@ -132,10 +135,17 @@ class Edit: Fragment(R.layout.edit) {
         showImage = view.findViewById(R.id.show_image)
         progressBar = view.findViewById(R.id.progressbar)
 
+        // Show result Image
+        resultLevel = view.findViewById(R.id.result_level);
+        resultImageView = view.findViewById(R.id.result_image);
+
 
         // Large progress bar
         val largeProgressBar = view.findViewById<ProgressBar>(R.id.large_progressbar)
         largeProgressBar.visibility = View.INVISIBLE
+
+        // Initially result level is not visible
+        resultLevel.visibility = View.INVISIBLE
 
         // get the initial data from previous screen
         val sharedPrefs = requireContext().getSharedPreferences(Keys.SHARED_PREF, Context.MODE_PRIVATE)
@@ -193,11 +203,7 @@ class Edit: Fragment(R.layout.edit) {
         }
 
         save.setOnClickListener {
-            val pngData: ByteArray = bitmapToPng(editedImage)
-
-            val fileOutputStream = FileOutputStream("path/to/save/image.png")
-            fileOutputStream.write(pngData)
-            fileOutputStream.close()
+            showResultImage()
         }
     }
 
@@ -606,6 +612,11 @@ class Edit: Fragment(R.layout.edit) {
     // Image set in to view
     private fun setImage(){
         showImage.setImageBitmap(editedImage)
+    }
+
+    private fun showResultImage(){
+        resultLevel.visibility = View.VISIBLE
+        resultImageView.setImageBitmap(editedImage)
     }
 
     // Bitmap from URI
